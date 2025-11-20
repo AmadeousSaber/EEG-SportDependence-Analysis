@@ -1,0 +1,53 @@
+{
+	"NCores": 2,
+    
+    "EEGLabPath": "D:\\data_process_toolbox\\eeglab2024.0",
+	"FieldtripPath": "D:\\data_process_toolbox\\fieldtrip-20240701",
+	"BrainConnectivityToolboxPath" : "D:\\data_process_toolbox\\BCT\\2019_03_03_BCT",
+
+	"StudyName": "sport_demo",
+	"RawDataPath": "F:\\sport\\data_process2025.11.7\\1_eeg2bids\\control_close_bids",
+	"PreprocessedDataPath": "F:\\sport\\data_process2025.11.10\\3_processed_data_results\\control\\0.4",
+	"Session" : [],
+	"Run" : [],
+	"Task" : [],
+	"BidsChanloc" : "off",
+	"NoseDir": [],
+	"RefCoord" : {
+		"X": [],
+		"Y": [],
+		"Z": []},
+
+	"DownsamplingRate" : [],
+	"FlatLineCriterion" : 5,
+	"ChannelCriterion" : 0.8,
+	"LineNoiseCriterion" : 4,
+	"HighPass" : [0.25, 0.75],
+	"AddRefChannel" : "off",
+    "NICARepetitions": 10,
+	"ICLabel" : [[null, null], [0.8, 1], [0.8, 1], [null, null],[null, null],[null, null],[null, null]],
+	"BurstCriterion" : 20,
+	"WindowCriterion" : 0.25,
+	"WindowCriterionTolerances" : "[-Inf,7]",
+    "RejectBadTimeSegments" : "on",
+	"EpochLength" : 5,
+	"EpochOverlap" : 0.5,
+
+	"BrainFeatExtr": true,
+	"FreqRes" : 0.2,
+	"FreqBand" : {
+		"theta": [4,7.9],		
+		"alpha": [8,12.9],
+		"beta": [13,30],
+		"gamma": [30.1,80]},
+	"Taper" : "dpss",
+	"Tapsmofrq" : 1,
+	"HeadModelPath" : "standard_bem.mat",
+	"SurfaceModelPath" : "surface_white_both.mat",
+	"AtlasPath" : "parcellations/Schaefer2018_100Parcels_7Networks_order_FSLMNI152_1mm.Centroid_RAS.csv",
+	"FreqResConnectivity" : 0.2,
+	"ConnMatrixThreshold" : 0.4,
+	"UseWeightedGraphs" : false
+}
+
+
